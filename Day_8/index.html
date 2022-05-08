@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Api</title>
+  </head>
+  <body>
+    <h1>Web Apis</h1>
+    <section id="battery">
+      <div>
+        <h2>Battery</h2>
+        <h4>Battery Level: <span id="battery-level"></span></h4>
+        <h4>Battery Status: <span id="battery-status"></span></h4>
+      </div>
+      <script src="./scripts/battery.js"></script>
+    </section>
+    <hr />
+    <section id="storage">
+      <div>
+        <h2>Storage</h2>
+        <div>
+          <div>
+            <textarea
+              name="text"
+              id="text"
+              cols="30"
+              rows="5"
+              placeholder="Write Something..."
+            ></textarea>
+          </div>
+          <div>
+            <button id="save-local">Save Local</button>
+            <button id="save-session">Save Session</button>
+          </div>
+        </div>
+      </div>
+
+      <script src="./scripts/storage.js"></script>
+    </section>
+    <hr />
+    <section id="notification">
+      <div>
+        <h2>Notification</h2>
+        <div>
+          <div>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="5"
+              placeholder="Write Comment..."
+            ></textarea>
+          </div>
+          <div>
+            <button id="random-notification">Notify Random</button>
+            <button id="comment-notification">Notify Comment</button>
+          </div>
+        </div>
+      </div>
+
+      <script src="./scripts/notification.js"></script>
+    </section>
+    <hr />
+    <section id="fetch">
+      <div>
+        <button id="fetch">Fetch</button>
+        <button id="cancel">Cancel</button>
+      </div>
+
+      <script src="./scripts/fetch-abort.js"></script>
+    </section>
+    <hr />
+    <section id="location">
+      <div>
+        <button id="locate">Get Location</button>
+      </div>
+
+      <script src="./scripts/geolocation.js"></script>
+    </section>
+  </body>
+</html>
